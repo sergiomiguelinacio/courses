@@ -97,4 +97,18 @@ fun main() {
     }
 
 
+    var name = "Sergio"
+
+    if(name == "Sergio"){
+        println("Welcome home Sergio")
+    }
+    else {
+        println("Who are you?")
+    }
+
+    var isRainy = true
+    if(isRainy)
+        println("It's rainy")
+
+
 }
