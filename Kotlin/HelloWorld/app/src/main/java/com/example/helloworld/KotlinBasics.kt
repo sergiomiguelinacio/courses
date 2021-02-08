@@ -218,12 +218,21 @@ fun main() {
         null
     }
 
-    println(nullableName?.toLowerCase())
+    //println(nullableName?.toLowerCase())
 
 
     nullableName?.let {println(it.length)} // same as a if and else
 
 
+    // ?: Elvis Operator
+    val nameNullable = nullableName ?: "Guest"
+    println("name is $nameNullable")
+
+    // not null assertion
+    println(nullableName!!.toLowerCase()) // this throw an exception because of line nullableName = null
+
+    //safe chain call
+    // val wifeAge: String? = user?.wife?.age ?: 0
 }
 
 fun addUp(a: Int, b: Int) : Int {
