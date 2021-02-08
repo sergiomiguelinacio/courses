@@ -6,6 +6,7 @@ fun main() {
     val myName = "Sergio"
 
     // type int 32 bit
+    // type inference, finds out the type from context
     var myAge = 31
 
     // Integer TYPES: Byte(8 bit), Short (16 bit),
@@ -19,5 +20,17 @@ fun main() {
     val myFloat: Float = 13.37F
     val myDouble: Double = 3.141559265358979323846
 
-    print("Hello " + myName)
+    // Boolean
+    var isSunny: Boolean = true
+    isSunny = false
+
+    // Characters
+    val letterChar = 'A'
+    val digitChar = '1'
+
+    // Strings
+    val myStr = "Hello World"
+    var firstCharInStr = myStr[0]
+
+    print("First character  " + firstCharInStr)
 }
