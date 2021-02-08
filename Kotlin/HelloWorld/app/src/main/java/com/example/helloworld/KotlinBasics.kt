@@ -41,5 +41,31 @@ fun main() {
     val b = 3
     var resultDouble : Double
     resultDouble = a / b
-    print(resultDouble)
+    //print(resultDouble)
+
+    // Comparison operators (==, !=, <, >, <=, >=)
+    val isEqual = 5==3
+    //print("isEqual is $isEqual")
+
+    val isNotEqual = 5!=5
+    // String interpolation
+    //println("isNotEqual is $isNotEqual")
+    
+    //println("is-5less3 ${-5<3}")
+    //println("is5LowerEqual3 ${5<=3}")
+    //println("is5GreaterEqual3 ${5>=3}")
+
+    // Assignment operators (+=, -=, *=, /=, %=)
+    var myNum = 5
+    myNum += 3
+    println("myNum is $myNum")
+    myNum *= 4
+    println("myNum is $myNum")
+
+    // Increment & Decrement operators (++, --)
+    myNum++
+    println("myNum is $myNum")
+    println("myNum is ${myNum++}")
+    println("myNum is ${++myNum}")
+    println("myNum is ${--myNum}")
 }
