@@ -32,5 +32,14 @@ fun main() {
     val myStr = "Hello World"
     var firstCharInStr = myStr[0]
 
-    print("First character  " + firstCharInStr)
+    //print("First character  " + firstCharInStr)
+
+
+    // Arithmetic Operators (+, -, *, /, %)
+    var result = 5 + 3
+    val a = 5.0
+    val b = 3
+    var resultDouble : Double
+    resultDouble = a / b
+    print(resultDouble)
 }
