@@ -147,4 +147,19 @@ fun main() {
         is String -> println("$x is String")
         else -> println("$x is none of the above")
     }
+
+    var y = 1
+    while(y <= 10){
+        print("$y")
+        y++
+    }
+    println("\nWhile loop is done")
+
+    var z = 100
+    while(z >= 0){
+        print("$z")
+        z -= 2
+    }
+    println("\nWhile loop is done")
+
 }
