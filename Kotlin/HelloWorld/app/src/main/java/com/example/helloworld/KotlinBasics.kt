@@ -168,4 +168,15 @@ fun main() {
         z++
     }while(z < 10)
     println("\ndo While loop is done")
+
+    var feltTemp = "cold"
+    var roomTemp = 10
+
+    while(feltTemp == "cold"){
+        roomTemp++
+        if(roomTemp >= 20){
+            feltTemp = "comfy"
+            println("it's comfy now")
+        }
+    }
 }
