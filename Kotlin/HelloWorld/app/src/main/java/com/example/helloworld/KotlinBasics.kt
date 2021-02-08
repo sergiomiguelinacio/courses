@@ -58,14 +58,43 @@ fun main() {
     // Assignment operators (+=, -=, *=, /=, %=)
     var myNum = 5
     myNum += 3
-    println("myNum is $myNum")
+    //println("myNum is $myNum")
     myNum *= 4
-    println("myNum is $myNum")
+    //println("myNum is $myNum")
 
     // Increment & Decrement operators (++, --)
     myNum++
-    println("myNum is $myNum")
-    println("myNum is ${myNum++}")
-    println("myNum is ${++myNum}")
-    println("myNum is ${--myNum}")
+    //println("myNum is $myNum")
+    //println("myNum is ${myNum++}")
+    //println("myNum is ${++myNum}")
+    //println("myNum is ${--myNum}")
+
+    var heightPerson1 = 170
+    var heightPerson2 = 169
+    
+    if(heightPerson1 > heightPerson2)
+    {
+        println("use raw force")
+    }
+    else if(heightPerson1 == heightPerson2)
+    {
+        println("use your power technique 1337")
+    }
+    else{
+        println("use raw technique")
+    }
+
+    val age = 31
+    if(age >= 21)
+    {
+        println("now you may drink in th US")
+    }
+    else if(age >= 18){
+        println("you may vote now")
+    }
+    else if(age >= 16){
+        println("you're too young")
+    }
+
+
 }
