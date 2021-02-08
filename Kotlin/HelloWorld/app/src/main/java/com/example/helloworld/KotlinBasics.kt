@@ -201,6 +201,29 @@ fun main() {
     var averageResult = average(5.3,13.37)
     println("Average is $averageResult")
 
+    println("Nullables")
+
+    var notNullName : String = "Sergio"
+    // name = null -> compilation ERROR
+    var nullableName : String? = "Sergio"
+    //nullableName = null
+
+    var len = notNullName.length
+    var len2 = nullableName?.length // this line is the sames as the lines below
+
+    if(nullableName != null){
+        var len2 = nullableName.length
+    }
+    else{
+        null
+    }
+
+    println(nullableName?.toLowerCase())
+
+
+    nullableName?.let {println(it.length)} // same as a if and else
+
+
 }
 
 fun addUp(a: Int, b: Int) : Int {
