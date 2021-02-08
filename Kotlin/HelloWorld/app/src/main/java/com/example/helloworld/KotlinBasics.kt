@@ -162,4 +162,10 @@ fun main() {
     }
     println("\nWhile loop is done")
 
+    z = 15
+    do{
+        println("$z")
+        z++
+    }while(z < 10)
+    println("\ndo While loop is done")
 }
