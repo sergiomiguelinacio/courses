@@ -193,4 +193,24 @@ fun main() {
     for(i in 10 downTo  1 step 2){ // Same as - for(i im 10.downTo(1).step(2))
         print("$i ")
     }
+    println("Functions")
+    // Functions
+    var addUpResult = addUp(5,3)
+    println("Addup is $addUpResult")
+
+    var averageResult = average(5.3,13.37)
+    println("Average is $averageResult")
+
+}
+
+fun addUp(a: Int, b: Int) : Int {
+    return a + b
+}
+
+fun average(a: Double, b: Double): Double {
+    return (a+b)/2
+}
+
+fun myfunction(){
+    print("Called from myFunction")
 }
