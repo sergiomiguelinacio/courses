@@ -12,3 +12,4 @@ class MobilePhone(osName: String, brand: String, model: String){
                 "osName = $osName,  brand = $brand and model = $brand")
     }
 }
+
