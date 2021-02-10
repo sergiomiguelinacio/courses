@@ -1,5 +1,7 @@
 package com.example.helloworld
 
+import java.lang.IllegalArgumentException
+
 fun main() {
     var sergio = Person("Sergio", "Silva", 31)
     sergio.hobby = "skateboard"
@@ -13,6 +15,14 @@ fun main() {
 
 
     myFunction(5)
+
+    var myCar = Car()
+    myCar.maxSpeed = 100
+    println("brand is:  ${myCar.myBrand}")
+    println("MaxSpeed is ${myCar.maxSpeed}")
+    // the setter is private, will get an error
+    //myCar.myModel = "M3"
+    println("Mode is ${myCar.myModel}")
 }
 
 class Person(firstName: String = "John", lastName: String = "Doe"){
@@ -50,4 +60,34 @@ fun myFunction(a:Int){
     // a is a variable
     var a = 4
     println("a is $a")
+}
+
+class Car(){
+    lateinit var owner : String
+
+    val myBrand : String = "BMW"
+
+        // Custom getter
+    get() {
+        return field.toLowerCase()
+    }
+
+    var maxSpeed: Int = 250
+        // this code is autoGenerate in background so could be remove
+        //get() = field
+        //set(value){
+        //   field = value
+        //}
+        // customer setter
+        set(value){
+            field = if(value > 0 ) value else throw IllegalArgumentException("Max speed can not me less than 0")
+        }
+
+    var myModel: String = "M5"
+        private set
+
+    init{
+        this.myModel ="M3"
+        this.owner = "Frank"
+    }
 }
