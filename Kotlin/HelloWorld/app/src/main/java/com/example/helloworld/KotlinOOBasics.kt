@@ -16,7 +16,7 @@ fun main() {
 
     myFunction(5)
 
-    var myCar = Car()
+    var myCar = Car2()
     myCar.maxSpeed = 100
     println("brand is:  ${myCar.myBrand}")
     println("MaxSpeed is ${myCar.maxSpeed}")
@@ -62,7 +62,7 @@ fun myFunction(a:Int){
     println("a is $a")
 }
 
-class Car(){
+open class Car2(){
     lateinit var owner : String
 
     val myBrand : String = "BMW"
