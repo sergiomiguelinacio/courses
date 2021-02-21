@@ -41,51 +41,45 @@
         android:textStyle="bold"/>
 
     <Button
+        android:id="@+id/btnDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="@color/white"
-        android:backgroundTint="@color/white"
+        android:background="#FFFFFF"
         android:text="Select Date"
         android:textColor="#929292"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tvSelectedDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="1/12/2019"
-        android:textColor="@color/textColor"
-        android:textSize="18sp"
+        android:layout_marginTop="20sp"
+        android:textColor="#844046"
+        android:textSize="20sp"
         android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:text="Selected Date"
-        android:textColor="#bdbdbd"
-        android:textSize="12sp"
-        android:textStyle="bold"/>
+        android:textColor="@color/lightGreyTextColor"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvSelectedDateInMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="#844046"
+        android:textSize="35sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="123456789"
-        android:textColor="@color/textColor"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="In minutes till date"
-        android:textColor="#bdbdbd"
-        android:textSize="12sp"
-        android:textStyle="bold"/>
-
+        android:textColor="@color/lightGreyTextColor"
+        android:text="Age inr minutes"
+        android:textSize="18sp"/>
 
 </LinearLayout>
