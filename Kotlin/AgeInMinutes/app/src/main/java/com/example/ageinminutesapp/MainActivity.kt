@@ -56,6 +56,9 @@ class MainActivity : AppCompatActivity() {
                 var tvSelectedDateInMinutes = binding.tvSelectedDateInMinutes as? TextView
                 tvSelectedDateInMinutes?.text = differenceInMinutes.toString()
 
+                var tvSelectedDateInDays = binding.tvSelectedDateInDays as? TextView
+                tvSelectedDateInDays?.text = (differenceInMinutes /(60*24)).toString()
+
         }
             , year
             , month
@@ -65,6 +68,4 @@ class MainActivity : AppCompatActivity() {
 
         dpd.show();
     }
-
-
 }

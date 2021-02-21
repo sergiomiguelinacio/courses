@@ -79,7 +79,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/lightGreyTextColor"
-        android:text="Age inr minutes"
+        android:text="Age in minutes"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvSelectedDateInDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:textColor="#844046"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightGreyTextColor"
+        android:text="Age in days"
         android:textSize="18sp"/>
 
 </LinearLayout>
